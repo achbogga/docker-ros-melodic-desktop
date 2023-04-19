@@ -17,8 +17,8 @@ RUN apt-get update -q && \
     apt-get install --no-install-recommends -y ros-melodic-desktop-full python-rosdep && \
     apt-get install --no-install-recommends -y python-rosinstall python-rosinstall-generator python-wstool build-essential python-catkin-tools python3-vcstool
 RUN apt-get install -yq --no-install-recommends python3-pip && \
-    apt install -yq --no-install-recommends python3-rospkg
-RUN apt install ros-melodic-desktop-full --fix-missing && \
+    apt-get install -yq --no-install-recommends python3-rospkg
+RUN apt-get install -yq ros-melodic-desktop-full --fix-missing && \
     rm -rf /var/lib/apt/lists/*
 RUN rosdep init
 RUN locale-gen en_US.UTF-8

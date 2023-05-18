@@ -1,2 +1,2 @@
-FROM tiryoh/ros-melodic-desktop:base
+FROM ros-noetic-base:latest
 ENV NOPASSWD="NOPASSWD:"
